@@ -25,7 +25,7 @@
     bool leading_line = true;
     std::vector<std::string> strings;
     int num_map = 0;
-
+    int ind=0;
     while (std::getline(inputFile, line)) {
         // Create a stringstream to parse the line
         std::istringstream ss(line);
@@ -63,6 +63,8 @@
                         num_map++;
                     }
                 }
+                std::cout << "s_" << (ind) << " " << si << std::endl;
+                ind++;
                 strings.push_back(si);
 
               } else{
